@@ -1,10 +1,16 @@
-def countdown(number)
-  countdown_output = 10
-  while countdown_output > 0 
-  puts "#{countdown_output} SECOND (S)!"
-  countdown_output -= 1
-  end
-  "HAPPY NEW YEARS!"
+num = 10
+def countdown(num)
+    while num > 0
+        puts "#{num} SECOND(S)!"
+        num -= 1
+    end
+    "HAPPY NEW YEAR!"
 end
-
-
+def countdown_with_sleep(num)
+    while num > 0
+        puts "#{num} SECOND(S)!"
+        sleep(1)
+        num -= 1
+    end
+    "HAPPY NEW YEAR!"
+end
